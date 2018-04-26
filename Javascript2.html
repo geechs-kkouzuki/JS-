@@ -1,7 +1,10 @@
 <html>
-	<body>
+	<body onload="alert('いらっしゃいませ')" onunload="alert('またどうぞ！')" oncontextmenu="alert('右クリック禁止'); return false">
 		<script type="text/javascript">
-			document.write("おはよう！")
+			document.write("ようこそJavascriptの世界へ！")
+		</script><br>
+		<script type="text/javascript">
+			document.write("このページでは右クリック禁止！")
 		</script><br>
 		<input type="button" value="ボタン" onmouseover="this.value='クリックして！'" onmouseout="this.value='クリックしろーー！'" onclick="alert('はい、ザンネーン！')">
 	</body>
