@@ -1,5 +1,5 @@
 <html>
-	<body onload="alert('いらっしゃいませ')"; onunload="alert('またどうぞ！')"; oncontextmenu="alert('右クリック禁止'); return false">
+	<body onload="alert('いらっしゃいませ')" onunload="alert('またどうぞ!')" oncontextmenu="alert('右クリック禁止'); return false">
 
 		<script type="text/javascript">
 				document.write('ようこそJavascriptの世界へ！');
@@ -9,6 +9,15 @@
 				document.write('このページで右クリック禁止！');
 		</script><br>
 		
-		<input type="button" value="ボタン" onmouseover="this.value='クリックして！'" onmouseout="this.value='クリックしろーー！'" onclick="alert('はい、ザンネーン！')">
+		メールアドレス：<input type="text" name="e-mail"><br>
+		メールアドレス（確認用）：<input type="text" name="e-mailcheck"><br>
+
+		<input type="button" value="ボタン" onmouseover="this.value='クリックして！'" onmouseout="this.value='クリックしろーー！'" onclick="alert('はい、ザンネーン！')"><br><br>
+
+		<img src="/Users/kkouzuki/Javascript_html/JS練習用画像フォルダ/ギター.jpg" 
+		onmouseover="src='/Users/kkouzuki/Javascript_html/JS練習用画像フォルダ/ギター2.png'" 
+		onmouseout="src='/Users/kkouzuki/Javascript_html/JS練習用画像フォルダ/ギター.jpg'">
+
+
 	</body>
 </html>
