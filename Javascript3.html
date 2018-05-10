@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <script type="text/javascript">
+      var a=5;
+      var b=15;
+      document.write(a+b);
+    </script><br><br>
+ 
+    <script type="text/javascript">
+    	function nibai(x) {
+    		var y=x*2; return y;
+    	}
+    	function tasizan(o,p) {
+    		var q=Number(o)+Number(p); return q;
+    	}
+
+    	document.write(a+b+nibai(4));
+    	document.write(tasizan(4,5))
+    </script><br>
+
+    <input type="text" id="num">
+    <input type="button" value="２倍にする" onclick="alert(nibai(num.value))"><br><br>
+
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="button" value="足し算する" onclick="alert(tasizan(num1.value,num2.value))">
+
+  </body>
+</html>
