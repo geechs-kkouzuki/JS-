@@ -10,10 +10,14 @@
         }
       }
       function Thandan(Tshadanki){
-        if(Tshadanki > 4) {
-          document.getElementById("kekka").innerHTML = "止まる！";
+        if (Tshadanki >= 4) {
+          if (Tshadanki > 6 || police.value == 1) {
+            document.getElementById("kekka").innerHTML = "止まる";
+          } else {
+            document.getElementById("kekka").innerHTML = "ダッシュ";
+          }
         } else {
-          document.getElementById("kekka").innerHTML = "進む！";
+          document.getElementById("kekka").innerHTML = "進む";
         }
       }
     </script>
@@ -23,7 +27,10 @@
 
     <input type="text" id="num2">
     <input type="button" value="程度判断" onclick="Thandan(num2.value)"><br>
-
+    <select id="police">
+      <option value=0 selected="selected">お巡りさんがいない</option>
+      <option value=1>お巡りさんがいる</option>
+    </select><br>
     <span id="kekka">ここに結果を表示します</span>
 
   </body>
