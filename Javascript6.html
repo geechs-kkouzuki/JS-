@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <script type="text/javascript">
+      var seiseki=[95,73,86,47,90];
+      var total=0;
+      for (var i=0; i<seiseki.length; i++) {
+        total+=seiseki[i];
+      }
+      var heikin = total/seiseki.length;
+
+      function Seito(_Namae,_Seiseki){
+        this.Namae=_Namae;
+        this.Seiseki=_Seiseki;
+      }
+      var kumi=[];
+      kumi[0]=new Seito("山田太郎",95);
+      kumi[1]=new Seito("田中一郎",73);
+      kumi[2]=new Seito("鈴木花子",86);
+      kumi[3]=new Seito("佐藤二郎",65);
+      kumi[4]=new Seito("山中優子",90);
+    </script>
+    <script type="text/javascript">
+      document.write("成績の平均："+heikin+'<br>');
+      for(var k=0; k<kumi.length; k++) {
+        document.write(kumi[k].Namae+"："+kumi[k].Seiseki+'<br>');
+      }
+      var Total=0;
+      for (k=0; k<kumi.length; k++){
+        Total+=kumi[k].Seiseki;
+      }
+      var Heikin=Total/kumi.length;
+      document.write("５人の成績の平均："+Heikin);
+    </script>
+
+  </body>
+</html>
